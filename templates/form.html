@@ -6,11 +6,11 @@
     <title>Clasificador de Insectos</title>
     <style>
         :root {
-            --primary-color: #4CAF50;
-            --secondary-color: #45a049;
-            --background-color: #f5f5f5;
-            --card-color: #ffffff;
-            --text-color: #333333;
+            --primary-color: #9d4edd;  /* Morado principal */
+            --secondary-color: #9d4edd;  /* Morado oscuro */
+            --background-color: #10002b;  /* Fondo negro */
+            --card-color: #1e1e1e;  /* Tarjeta oscura */
+            --text-color: #f2f2f2;  /* Texto claro */
             --error-color: #f44336;
         }
 
@@ -34,7 +34,7 @@
             padding: 30px;
             background-color: var(--card-color);
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
         }
 
@@ -63,16 +63,18 @@
         input[type="text"] {
             width: 100%;
             padding: 12px 15px;
-            border: 2px solid #ddd;
+            border: 2px solid #333;
             border-radius: 5px;
             font-size: 16px;
             transition: border 0.3s;
+            background-color: #2d2d2d;
+            color: var(--text-color);
         }
 
         input[type="text"]:focus {
             border-color: var(--primary-color);
             outline: none;
-            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+            box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.3);
         }
 
         button[type="submit"] {
@@ -107,20 +109,20 @@
         }
 
         .success {
-            background-color: #e8f5e9;
-            color: var(--primary-color);
+            background-color: #2e1b3b;  /* Fondo morado oscuro */
+            color: #ba68c8;  /* Texto morado claro */
             border-left: 5px solid var(--primary-color);
         }
 
         .error {
-            background-color: #ffebee;
-            color: var(--error-color);
+            background-color: #3a1c1c;  /* Fondo rojo oscuro */
+            color: #ff8a80;  /* Texto rojo claro */
             border-left: 5px solid var(--error-color);
         }
 
         .info-text {
             text-align: center;
-            color: #666;
+            color: #9e9e9e;  /* Texto gris claro */
             font-style: italic;
             margin-bottom: 20px;
         }
